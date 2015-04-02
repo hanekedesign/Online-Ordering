@@ -200,6 +200,11 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+/*
+    font-size: 32px;
+    font-style: normal;
+    font-family: 'Ultra', serif;  
+*/
 }
 .subcategories input:checked + label {
     cursor: default;
