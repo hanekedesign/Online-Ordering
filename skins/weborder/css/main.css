@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic);
+
 /*
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -11,7 +13,7 @@
     font-style: normal;
 }
 * {
-    font-family: "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "PT Sans", "TeXGyreHerosRegular", "Helvetica", "Arial", "Tahoma", "Geneva", sans-serif;
     font-weight: normal;
     letter-spacing: 0.01em;
     margin: 0;
@@ -1039,7 +1041,7 @@ section.maintenance #header .btn {
 
 .promo_message {
     display: none;
-    font-family: helvetica neue;
+    font-family: PT Sans;
     font-size: 1.65em;
     font-weight: regular;
     padding: 0.15em 0.4em 0em 0.4em;
