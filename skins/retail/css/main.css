@@ -587,7 +587,7 @@ footer {
     position: relative;
     border-width: 10px;
     border-style: solid;
-    border-radius: 20px;
+    border-radius: 0px;
     opacity: 0;
     filter: alpha(opacity=0);
 }
