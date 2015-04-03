@@ -140,10 +140,10 @@
     right: 0;
 }
 #content .content.products .arrow_top {
-    top: 0;
+    top: 20px;
 }
 #content .content.products .arrow_bottom {
-    bottom: 0;
+    bottom: -15px;
 }
 #content .content.products .content_arrow {
     left: -35px;
@@ -155,6 +155,7 @@
     position: relative;
     text-align: center;
     margin-top: 6px;  
+    font-family: 'Vitesse-Black'!important;
   
 }
 .subcategories .arrow {
@@ -177,14 +178,12 @@
 .subcategories .tabs {
     overflow: hidden;
     margin: 0 auto;
-    border-radius: 15px;  
-    
+    border-radius: 15px;    
 }
 .subcategories .tabs > ul {
     position: relative;
     white-space: nowrap;
-    height: 35px; 
-  
+    height: 35px;   
 }
 .subcategories ul {
 
@@ -257,6 +256,7 @@
     height: 100%;
     padding-right: 75px;
     overflow-x: hidden;
+    margin-top: 40px  
 }
 
 #content .subcategories.hide ~ .content {
@@ -274,7 +274,7 @@
 }
 .category_description {
     position: absolute;
-    top: -37px;
+    top: -20px;
     left: 0;
     right: 470px;
     height:40px;

@@ -99,7 +99,7 @@ select {
     border-width: 1px;
     border-style: solid;
     border-radius: 3px;
-    height: 42px;
+    height: 32px;
 }
 .select-wrapper:after {
     content: '';
