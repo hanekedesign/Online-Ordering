@@ -2,7 +2,7 @@ html {
 /*    background: url('img/main-bg.jpg') no-repeat scroll 50% 50% #ddd;*/
     background-color: #fff;  
     background-size: 100% 100%;
-    text-shadow: 1px 1px 2px #fff;
+/*    text-shadow: 1px 1px 2px #fff;*/
     color: #373b40;
 }
 textarea, input {
@@ -145,16 +145,16 @@ aside:after, aside:before {
 #cart .main h2 {
     color: #fff;
     text-shadow: none;
-    background: #3d9ec7;
+    background: #231f20;
     box-shadow: 0 1px 1px rgba(255, 255, 255, 0.6) inset;
 }
-#cart .main .cart-total {
+#cart .main .subtotal {
     border-top-color: #362b18;
+    color: #a4cc3a;
 }
 #cart .main .checkout {
-    background: #f3f3f3;
-    border-color: #7b7b7b;
-    box-shadow: 0 2px 4px 1px rgba(218, 218, 218, 0.5), 0 0 3px 2px #fff inset;
+    background-color: rgba(145, 201, 99, 0.2);
+    color:#91c963;
 }
 #cart .main .checkout:active {
     box-shadow: 0 0 4px 1px #dadada inset;
@@ -189,16 +189,17 @@ aside:after, aside:before {
     color: #838383;
 }
 .btn {
+/*
     border-color: #f2f2f2;
     background: #f2f2f2;
     box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+*/
+    background-color: rgba(145, 201, 99, 0.2);
+/*    color:#231f20 ;*/
 }
 .btn:before {
     border-color: #c1bfba;
-    box-shadow: 0 0 3px 2px #fff inset, 0 -1px 5px 3px #bad9e9;
-}
-.btn.disabled:before {
-    box-shadow: none;
+/*    box-shadow: 0 0 3px 2px #fff inset, 0 -1px 5px 3px #bad9e9;*/
 }
 .btn:active {
     box-shadow: none !important;
@@ -261,11 +262,16 @@ aside:after, aside:before {
     color: #4a4031;
 }
 .action_button {
+    background-color: rgba(145, 201, 99, 0.2);
+    color:#91c963;
+  /*
     background: -moz-linear-gradient(top,  #f9f9f9 0%, #eaeaea 100%);
     background: -webkit-linear-gradient(top,  #f9f9f9 0%,#eaeaea 100%);
     background: -o-linear-gradient(top,  #f9f9f9 0%,#eaeaea 100%);
     background: linear-gradient(to bottom,  #f9f9f9 0%,#eaeaea 100%);
-    border-color: #60c2e2;
+    border: 2px solid #60c2e2;
+*/
+    border-radius: 19px;
 }
 #modifiers_popup .info {
     border-color: #a3a3a3;
@@ -273,22 +279,33 @@ aside:after, aside:before {
 /*    box-shadow: 0 0 15px 2px #bcdbeb;*/
 }
 .action_button {
-    box-shadow: 0 1px 0 0 rgba(249, 249, 249, 0.73), 0 3px 3px rgba(0, 0, 0, 0.3);;
+
+  
+/*    box-shadow: 0 1px 0 0 rgba(249, 249, 249, 0.73), 0 3px 3px rgba(0, 0, 0, 0.3);;*/
 }
 .action_button:active {
+    color:#fff;  
+    background-color: rgba(145, 201, 99, 0.4);
+
+  /*
     background: -moz-linear-gradient(top, #fcfcfc 0%, #ebebeb 100%);
     background: -webkit-linear-gradient(top, #fcfcfc 0%,#ebebeb 100%);
     background: -o-linear-gradient(top, #fcfcfc 0%,#ebebeb 100%);
     background: linear-gradient(to bottom, #fcfcfc 0%,#ebebeb 100%);
-    border: 1px solid #60c2e2;
-    box-shadow: 0 -1px 1px 2px rgba(249, 249, 249, 0.73), 0 3px 1px 0 rgba(0,0,0,0.3);
+*/
+/*    border: 1px solid #60c2e2;*/
+/*    box-shadow: 0 -1px 1px 2px rgba(249, 249, 249, 0.73), 0 3px 1px 0 rgba(0,0,0,0.3);*/
 }
-.action_button.disabled, .action_button.disabled:active, .btn.disabled, .btn.disabled:active {
+.action_button:hover {
+    background-color: rgba(145, 201, 99, 0.8);
+}
+.action_button.disabled, .action_button.disabled:active {
     background: -moz-linear-gradient(top,  #f9f9f9 0%, #eaeaea 100%);
     background: -webkit-linear-gradient(top,  #f9f9f9 0%,#eaeaea 100%);
     background: -o-linear-gradient(top,  #f9f9f9 0%,#eaeaea 100%);
     background: linear-gradient(to bottom,  #f9f9f9 0%,#eaeaea 100%);
-    border: 2px solid #AAA;
+    border: 1px solid #AAA;
+    border-radius: 19px;
     box-shadow: 0 2px 0 0 #D5D5D5, 0 3px 3px 1px #C8CFD1;
     color: #a5a5a5;
 }
@@ -474,9 +491,6 @@ aside:after, aside:before {
     .content_arrow:hover, .arrow:hover, #content .content_arrow:hover, #cart .content_arrow:hover {
         background: #ddd;
     }
-    .app-gallery-scroll:hover {
-        background: rgba(228, 241, 248, 0.8) !important;
-    }
 }
 
 /* start input beauty */
@@ -495,21 +509,10 @@ aside:after, aside:before {
 .input_beauty input:focus,
 .input_beauty textarea:focus,
 .input_beauty input:hover,
-.input_beauty textarea:hover,
-.inputbox:focus,
-.inputbox:not(.disabled):hover,
-button:focus,
-input[type="button"]:focus,
-.btn:focus,
-.action_button:focus,
-.cart-bottom .checkout:focus,
-.menu li:focus {
-    -webkit-box-shadow: 0px 0px 3px 4px rgba(129,195,222,0.3) !important;
-    -moz-box-shadow: 0px 0px 3px 3px rgba(129,195,222,0.5) !important;
-    box-shadow: 0px 0px 3px 3px rgba(129,195,222,0.5) !important;
-}
-select:focus {
-    border-color: rgba(129,195,222,0.5);
+.input_beauty textarea:hover {
+    -webkit-box-shadow: 0px 0px 3px 4px rgba(129,195,222,0.3);
+    -moz-box-shadow: 0px 0px 3px 3px rgba(129,195,222,0.5);
+    box-shadow: 0px 0px 3px 3px rgba(129,195,222,0.5);
 }
 
 /* end input beauty */
@@ -553,14 +556,6 @@ select:focus {
 .vertical-scrollbar::-webkit-scrollbar {
     width: 9px;
     background: transparent;
-}
-.vertical-scrollbar::-webkit-scrollbar-button:start:decrement,
-.vertical-scrollbar::-webkit-scrollbar-button:end:increment {
-     display: block;
-}
-.vertical-scrollbar::-webkit-scrollbar-button:start:increment,
-.vertical-scrollbar::-webkit-scrollbar-button:end:decrement {
-    display: none;
 }
 .vertical-scrollbar::-webkit-scrollbar-button:start:vertical {
     height: 3px;
@@ -616,46 +611,4 @@ select:focus {
 
 section.maintenance .back {
     color: #373b40;
-}
-
-/* cancel-input */
-span.cancel-input:before {
-    background: #ccc;
-    color: #fff;
-}
-span.cancel-input:active:before {
-    background: #ff0000;
-}
-.rewards-card-btn:active {
-    color: #2699ca;
-}
-.rewards-info {
-    background: #fff;
-}
-.color-style1 {
-    color: #009ad4;
-}
-.reward-selection li, .stanford-plan {
-    border-color: #2699ca;
-}
-.reward-selection li.active, .stanford-plan.active {
-    border-color: #065ca0;
-    background-color: rgba(38, 153, 202, 0.2);
-}
-.points-selection .order-item {
-    border-bottom-color: #2699ca;
-}
-.points-selection.active .order-item {
-    border-bottom-color: #065ca0;
-}
-.reward-selection li.active:after, .stanford-plan.active:after {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIxOTciIGhlaWdodD0iMTU4IiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjZmZmZmZmIiBwb2ludHM9IjE3NCwwIDYxLDExMyAyMiw3NCAwLDk3IDM4LDEzNSA2MSwxNTggMTk3LDIyIi8+PC9zdmc+');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.stanford-card .cancel-input:before {
-    background: #999;
-}
-.stanford-card .btn.disabled, .stanford-card .btn.disabled:before {
-    box-shadow: none;
 }
