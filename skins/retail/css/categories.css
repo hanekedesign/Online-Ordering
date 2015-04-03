@@ -288,8 +288,9 @@
     display: inline;
     font-weight: bold;
     font-style: normal;
-    font-size: 20px;
-    font-family: 'Ultra', sans-serif!important;
+    font-size: 30px;
+/*    font-family: 'Ultra', sans-serif!important;*/
+    font-family: 'Vitesse-Black', serif;
 }
 .categories_table li:first-child {
     margin-top:0px;
