@@ -1,23 +1,22 @@
- .product_table {
+.product_table {
     margin-bottom: 8px;
 }
-
+/* XX */
 .product_table .product {
-    display: inline-block;
-    vertical-align: top;
-    width: 47%;
+    width: 44%;
     padding: 7px 7px 7px 10px;
     cursor: pointer;
     margin-top: 2px;
-    margin-right: 3%;
-    border-radius: 8px;
+/*     border-radius: 8px; */
     border-width: 1px;
     border-style: dotted;
     border: 0px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
+}
+.product_table .product:not(.hide):nth-child(2n) {
+    float: right;
+}
+.product_table .product:not(.hide):nth-child(2n-1) {
+    float: left;
 }
 .product_table .product dl {
     position: relative;
@@ -90,14 +89,6 @@
 }
 .product_table .product .cost .price {
     font-weight: normal;
-}
-.product_table .product.list-none {
-    margin-top: 15px;
-    margin-left: 10px;
-    cursor: default;
-}
-.product_table .product.list-none:hover {
-    background: inherit;
 }
 
 /* styles for product list with hidden description */
@@ -271,7 +262,7 @@
 #modifiers_popup .product .cost .input_beauty {
     margin-right: 20px;
     margin-left: 3px;
-    width: 97px;
+    width:75px;
 }
 #modifiers_popup .product .gift_card {
     margin-top:5px;

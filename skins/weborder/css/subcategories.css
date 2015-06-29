@@ -1,18 +1,29 @@
+/* XX */
 .subcategories {
     position: absolute;
-    right: 200px;
-    top: 65px;
+    right: 27px;
+    top: 5px;
     padding: 0 5px;
     z-index: 101;
+}
+/* XX */
+.subcategories > span {
+    font-weight: normal;
+    line-height: 26px;
+    vertical-align: top;
+    font-size: 14px;
+	text-transform: uppercase;
+	color:#999
 }
 .subcategories select {
     font-size:16px;
 }
+/* XX */
 .subcategories .select-wrapper {
     margin-left: 7px;
     width: 170px;
     cursor: pointer;
-    border-radius: 15px;
+/* 	border-radius: 15px; */
     height: 24px;
     vertical-align: top;
 }

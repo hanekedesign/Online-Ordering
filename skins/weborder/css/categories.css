@@ -43,8 +43,9 @@
   border-right: 0px;
 }
 
-
+/* XX */
 /* Hack for safari. background color out of border radius*/
+/*
 .categories li label {
     border-top-style:solid;
     border-top-width:1px;
@@ -65,14 +66,17 @@
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
+*/
 /* End hack for safari*/
 
+/* XX */
 .slider_wrapper {
+	display: none;
    /* border:1px solid; // bad look with safari hack
-    border-radius: 15px;*/
+    border-radius: 15px;
     overflow: hidden;
     margin:0 auto;
-    border-radius: 15px;
+    border-radius: 15px;*/
 }
 
 .categories label {
@@ -91,14 +95,14 @@
     display: none;
 }
 .content_arrow.arrow_top {
-    top: 45px;
+    top: 15px;
 }
 .content_arrow.arrow_bottom {
     bottom:15px;
 }
 .categories_products_wrapper, .products_spinner {
     position: absolute;
-    top: 65px;
+    top: 35px;
     right:0px;
     padding-right:32px;
     left:32px;
@@ -111,29 +115,29 @@
     opacity: 0;
     filter: alpha(opacity=0);
 }
-
+/* XX */
 .category_description {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    font-size: 13px;
-    font-style: italic;
-    margin-bottom: 6px;
-    margin-top: 1px;
+	text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-top: 2px #302d2e solid;
+    border-bottom: 2px #302d2e solid;
 }
+/* XX */
 .category_description h2 {
+	font-family: Vitesse-Black, "TeXGyreHerosRegular", "Helvetica", "Arial", "Tahoma", "Geneva", sans-serif;
     display: inline;
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
 }
 .category_description .timetables{
     white-space: pre-wrap;
     margin-top: 0.2em;
 }
+/* XX */
 .categories_table li {
     margin-top:10px;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
 }
 .categories_table li:first-child {
     margin-top:0px;
