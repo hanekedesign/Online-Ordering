@@ -1,13 +1,13 @@
 .product_table {
     margin-bottom: 8px;
 }
-
+/* XX */
 .product_table .product {
     width: 44%;
     padding: 7px 7px 7px 10px;
     cursor: pointer;
     margin-top: 2px;
-    border-radius: 8px;
+/*     border-radius: 8px; */
     border-width: 1px;
     border-style: dotted;
     border: 0px;
