@@ -20,6 +20,7 @@
     overflow: hidden;
     top: 1px;
     padding: 0 4px 0 3px;
+    font-family: 'Ultra', sans-serif;
 }
 #header .categories.hidden {
     opacity: 0;
@@ -139,10 +140,10 @@
     right: 0;
 }
 #content .content.products .arrow_top {
-    top: 0;
+    top: 20px;
 }
 #content .content.products .arrow_bottom {
-    bottom: 0;
+    bottom: -15px;
 }
 #content .content.products .content_arrow {
     left: -35px;
@@ -153,7 +154,9 @@
     padding: 0 64px;
     position: relative;
     text-align: center;
-    margin-top: 6px;
+    margin-top: 6px;  
+    font-family: 'Vitesse-Black'!important;
+  
 }
 .subcategories .arrow {
     position: absolute;
@@ -175,12 +178,15 @@
 .subcategories .tabs {
     overflow: hidden;
     margin: 0 auto;
-    border-radius: 15px;
+    border-radius: 15px;    
 }
 .subcategories .tabs > ul {
     position: relative;
     white-space: nowrap;
-    height: 25px;
+    height: 35px;   
+}
+.subcategories ul {
+
 }
 .subcategories li {
     display: inline-block;
@@ -188,6 +194,8 @@
     text-align: center;
     border-right-style: solid;
     border-right-width: 1px;
+    font-size: 16px;    
+  
 }
 .subcategories li.last {
   border-right: 0px;
@@ -196,10 +204,13 @@
     display: block;
     padding: 0 5px;
     cursor: pointer;
-    line-height: 23px;
+    line-height: 38px;
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
+    overflow: hidden; 
+    height: 80px;
+
+  
 }
 .subcategories input:checked + label {
     cursor: default;
@@ -209,21 +220,26 @@
     border-top-style:solid;
     border-top-width:1px;
     border-bottom-style:solid;
-    border-bottom-width:1px;
+    border-bottom-width:1px;    
+  
 }
 
 .subcategories li.last label {
     border-right-style:solid;
     border-right-width:1px;
+/*
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+*/
 }
 
 .subcategories li.first label {
     border-left-style: solid;
     border-left-width: 1px;
+/*
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+*/
 }
 /* End hack for safari*/
 
@@ -240,7 +256,9 @@
     height: 100%;
     padding-right: 75px;
     overflow-x: hidden;
+    margin-top: 40px  
 }
+
 #content .subcategories.hide ~ .content {
     top: 60px;
 }
@@ -256,20 +274,23 @@
 }
 .category_description {
     position: absolute;
-    top: -37px;
+    top: -20px;
     left: 0;
     right: 470px;
-    height:25px;
+    height:40px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     font-size: 13px;
-    font-style: italic;
+    font-style: italic;  
 }
 .category_description h2 {
     display: inline;
     font-weight: bold;
-    font-size: 20px;
+    font-style: normal;
+    font-size: 30px;
+/*    font-family: 'Ultra', sans-serif!important;*/
+    font-family: 'Vitesse-Black', serif;
 }
 .categories_table li:first-child {
     margin-top:0px;
