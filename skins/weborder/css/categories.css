@@ -115,6 +115,14 @@
     opacity: 0;
     filter: alpha(opacity=0);
 }
+
+/* XX */
+.categories_products_wrapper:before {
+	content: "If you don’t see your favorite menu item, not to worry! It may be out of stock today, but will be back soon. Pick your next fresh fave, or call your local Fitlife Foods to secure your favorite meal for another day.";
+	margin-top: 20px;
+	font-size: 15px;
+}
+
 /* XX */
 .category_description {
 	text-align: center;
