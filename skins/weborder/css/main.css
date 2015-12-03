@@ -304,7 +304,7 @@ footer {
 }
 /* XX */
 #header .main .tabs li.active:before {
-	
+
     border-top: none;
     border-left: none;
  /*   content: '';
@@ -1032,4 +1032,8 @@ section.maintenance #header .btn {
 	background:url(../../../img/flflogo.png) #a4cc3a 15px top no-repeat;
 	display: block;
 	height: 36px;
+}
+
+form.search {
+  display: none;
 }
