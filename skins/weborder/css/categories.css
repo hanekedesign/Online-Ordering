@@ -118,9 +118,11 @@
 
 /* XX */
 .categories_products_wrapper:before {
-	content: "If you don’t see your favorite menu item, not to worry! It may be out of stock today, but will be back soon. Pick your next fresh fave, or call your local Fitlife Foods to secure your favorite meal for another day.";
+	content: "If you don’t see your favorite menu item, not to worry! It may be out of stock today, but will be back soon. Pick your next fresh fave, or call your local Fitlife Foods to secure your favorite meal for another day. * Member Meal and Project U account holders, please choose the “Pay at Store” option in order to receive your discounts.";
 	margin-top: 20px;
 	font-size: 15px;
+	color: #a4cc3a;
+	font-weight: bold;
 }
 
 /* XX */

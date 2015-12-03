@@ -13,15 +13,9 @@
     height: 20.2em;
     position: relative;
 }
-
+/* XX */
 #content .store_info_main_logo .divider {
-    width: 100%;
-    height: 3.3em;
-    border-top-width: 1px;
-    border-top-style: solid;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    display: none;
 }
 
 #content .store_info_main_logo .divider:before, #content .store_info_main_logo .divider:after {

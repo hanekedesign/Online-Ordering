@@ -202,14 +202,7 @@ ul.categories {
     box-shadow: 0px 0px 3px 3px rgba(183,227,53,0.5);
 }
 .action_button.disabled, .action_button.disabled:active {
-    background: -moz-linear-gradient(top,  #f9f9f9 0%, #eaeaea 100%);
-    background: -webkit-linear-gradient(top,  #f9f9f9 0%,#eaeaea 100%);
-    background: -o-linear-gradient(top,  #f9f9f9 0%,#eaeaea 100%);
-    background: linear-gradient(to bottom,  #f9f9f9 0%,#eaeaea 100%);
-    border: 2px solid #AAA;
-    border-radius: 19px;
-    box-shadow: 0 2px 0 0 #D5D5D5, 0 3px 3px 1px #C8CFD1;
-    color: #a5a5a5;
+    opacity: .5;
 }
 #header .checkout .btn:active {
     box-shadow: 0 -1px 2px 1px rgba(38, 38, 38, 0.15), 0 3px 1px 0 rgba(242, 242, 242, 0.45), 0 -1px 5px rgba(38, 38, 38, 0.35) inset !important;
